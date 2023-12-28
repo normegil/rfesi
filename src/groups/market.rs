@@ -13,7 +13,7 @@ pub struct HistoryItem {
     pub volume: i64,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 #[allow(missing_docs)]
 pub struct MarketOrder {
     pub duration: i32,
