@@ -14,7 +14,7 @@ pub struct Skill {
     pub trained_skill_level: i32,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Clone, Serialize)]
 #[allow(missing_docs)]
 pub struct Skills {
     pub skills: Vec<Skill>,
