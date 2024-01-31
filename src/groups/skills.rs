@@ -5,7 +5,7 @@ pub struct SkillsGroup<'a> {
     pub(crate) esi: &'a Esi,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Clone, Serialize)]
 #[allow(missing_docs)]
 pub struct Skill {
     pub skill_id: i32,
